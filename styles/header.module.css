@@ -1,0 +1,51 @@
+.header {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)), url(/img/header.jpg);
+    padding: 6rem 0;
+    background-size: cover;
+    background-position: center;
+}
+
+.header .logo {
+    width: 25rem;
+}
+
+.barra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .navegacion {
+    display: flex;
+    gap: 2rem;
+}
+
+.header .navegacion img {
+    width: 2.5rem;
+}
+
+.header .navegacion a {
+    color: var(--white);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 1.4rem;
+    transition: color .3s ease;
+}
+
+.header .navegacion a:hover{
+    color: var(--primary);
+}
+
+.header .active {
+    color: var(--primary)!important;
+}
+
+
+@media (max-width: 576px) {
+    .barra {
+        flex-direction: column;
+        align-items: center;
+        gap: 4rem;
+    }
+}
